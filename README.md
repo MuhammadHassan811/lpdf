@@ -96,7 +96,7 @@ reference-dependent metric without naming its reference is a reporting error.
 ## Install
 
 ```bash
-git clone https://github.com/<your-username>/lpdf.git
+git clone https://github.com/MuhammadHassan811/lpdf.git
 cd lpdf
 python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt

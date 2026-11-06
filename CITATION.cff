@@ -9,13 +9,13 @@ abstract: >-
 version: 0.1.0
 license: MIT
 type: software
-repository-code: "https://github.com/REPLACE-WITH-YOUR-USERNAME/lpdf"
+repository-code: "https://github.com/MuhammadHassan811/lpdf"
 authors:
   - family-names: Hassan
     given-names: Muhammad
     affiliation: "Department of Computer Science, University of Engineering and Technology, Lahore, Pakistan"
     email: hassanextra811@gmail.com
-    # orcid: "https://orcid.org/REPLACE-WITH-YOUR-ORCID"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # uncomment and set once registered
   - family-names: Ghani Khan
     given-names: Muhammad Usman
     affiliation: "Department of Computer Science, University of Engineering and Technology, Lahore, Pakistan"
