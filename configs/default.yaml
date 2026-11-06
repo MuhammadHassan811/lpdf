@@ -1,0 +1,55 @@
+# LPDF protocol configuration.
+# These values are the acceptance criteria declared in the paper. Any study
+# that changes them must report the change alongside its results.
+
+filters:
+  # The 20 standard amino acids. Anything else makes a sequence invalid.
+  allowed_residues: "ACDEFGHIKLMNPQRSTVWY"
+  min_length: 50
+  max_length: 1024
+  # Residues counted as hydrophobic when computing the composition filter.
+  # Stated explicitly because definitions differ between sources.
+  hydrophobic_residues: "AVILMFWY"
+  max_hydrophobic_fraction: 0.50
+
+structure:
+  # Mean pLDDT required to promote a candidate from the ESMFold screen to
+  # AlphaFold2 confirmation, and to count as folded.
+  screen_plddt: 70.0
+  # Mean pLDDT treated as high confidence.
+  high_confidence_plddt: 80.0
+
+novelty:
+  # Identity to the closest natural homologue above which a candidate is
+  # penalised for reproducing an existing protein.
+  max_identity: 0.80
+  # Search tool and database are recorded with every result.
+  tool: blastp
+  database: uniref50
+
+refine:
+  max_iterations: 5
+  min_iterations: 3
+  accept_plddt_gain: 5.0
+  accept_energy_gain: 2.0
+
+scoring:
+  # Weights over normalised components. Must sum to 1.0.
+  weights:
+    structure: 0.35
+    energy: 0.30
+    novelty: 0.20
+    function: 0.15
+  # Penalty multiplier applied to the novelty component when a candidate
+  # exceeds novelty.max_identity.
+  identity_penalty: 0.25
+  # Candidates scoring below this are discarded.
+  min_score: 0.0
+
+generation:
+  temperature: 1.0
+  top_k: 50
+  top_p: 0.95
+
+reproducibility:
+  seed: 0

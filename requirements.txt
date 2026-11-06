@@ -1,0 +1,5 @@
+pyyaml>=6.0
+numpy>=1.24
+pytest>=7.4
+# Optional: required only by metrics.paired_wilcoxon.
+scipy>=1.11

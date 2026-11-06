@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software and the paper."
+title: "LPDF — LLM-Based Protein Design Framework"
+abstract: >-
+  Reference implementation of a unified pipeline for designing novel protein
+  sequences with large language models, covering conditional generation,
+  filtering, two-tier structural validation, novelty assessment and
+  multi-objective ranking.
+version: 0.1.0
+license: MIT
+type: software
+repository-code: "https://github.com/REPLACE-WITH-YOUR-USERNAME/lpdf"
+authors:
+  - family-names: Hassan
+    given-names: Muhammad
+    affiliation: "Department of Computer Science, University of Engineering and Technology, Lahore, Pakistan"
+    email: hassanextra811@gmail.com
+    # orcid: "https://orcid.org/REPLACE-WITH-YOUR-ORCID"
+  - family-names: Ghani Khan
+    given-names: Muhammad Usman
+    affiliation: "Department of Computer Science, University of Engineering and Technology, Lahore, Pakistan"
+    email: usman.ghani@uet.edu.pk
+keywords:
+  - protein design
+  - large language models
+  - protein language models
+  - AlphaFold2
+  - ESMFold
+  - multi-objective ranking
+references:
+  - type: article
+    title: >-
+      A Technique to Design Novel Protein Sequences Using Large Language
+      Models: A Unified Framework and Evaluation Protocol
+    authors:
+      - family-names: Hassan
+        given-names: Muhammad
+      - family-names: Ghani Khan
+        given-names: Muhammad Usman
+    year: 2026
+    notes: "Preprint. Add the DOI once posted."
