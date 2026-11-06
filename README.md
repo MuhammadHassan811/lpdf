@@ -186,6 +186,7 @@ lpdf/
 │   ├── homology.py           homology search (interface)
 │   ├── refine.py             masked re-sampling (interface)
 │   └── pipeline.py           orchestration
+├── figures/                  scripts that generate the paper's figures
 └── tests/
 ```
 
